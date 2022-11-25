@@ -1,0 +1,786 @@
+:root{
+    --main-color: #009a7d;
+    --second-color: #5ddaa4;
+    --h1-size: 50px;
+    --p-size: 18px;
+}
+body {
+    background-color: var(--main-color);
+    scroll-behavior: smooth;
+}
+
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--second-color);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--main-color);
+}
+/* Navigation Bar Style */
+header {
+    background-color: #fff;
+}
+.navbar-expand-lg .navbar-collapse {
+    justify-content: center;
+}
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .nav-link:active, .navbar-light .navbar-nav .nav-link:focus {
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 5px 0 5px;
+    border-radius: 10px;
+    padding: 0 15px;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+    background-color: var(--main-color);
+}
+.navbar-light .navbar-nav .nav-item.active .nav-link {
+    color: #fff;
+    background-color: var(--main-color);
+}
+.boxContainer {
+    margin: auto;
+    position: relative;
+    height: 40px;
+    width: 200px;
+    padding: 0px 10px;
+    border-radius: 50px;
+    background-color: var(--second-color);
+}
+.elementsContainer {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.search {
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+    border-radius: 50px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    background-color: transparent;
+}
+.search:focus {
+    outline: none;
+}
+.fas.fa-search {
+    color: #fff;
+}
+/* Footer Style */
+footer {
+    color: var(--main-color);
+    padding-top: 50px;
+}
+footer .row .col-sm-2 h3 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+footer .row ul li {
+    padding: 2px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.footer_img {
+    margin: 20px;
+}
+footer .logo_img {
+    padding-bottom: 35px;
+}
+.tailbg {
+    height: 180px;
+    background-image: url(./Assets/backgrounds/Shape\ 102.png);
+    background-size: contain;
+    background-repeat: round;
+}
+.tailbg #tail {
+    position: absolute;
+    height: 340px;
+    transform: translate(305px);
+}
+
+/* INDEX PAGE */
+/* Intro Section Style */
+.introsection {
+    position: relative;
+    background-image: url(./Assets/backgrounds/bg1.png);
+    background-size: contain;
+    background-repeat: round;
+    min-height: 100vh;
+    width: 100%;
+}
+.introsection h1 {
+    color: var(--main-color);
+    font-size: var(--h1-size);
+    font-weight: 700;
+}
+.introsection p {
+    color: var(--main-color);
+    font-size: var(--p-size);
+    font-weight: 500;
+    font-style: italic;
+    text-transform: uppercase;
+}
+.introsection .col-sm-4 {
+    padding: 100px 0 200px;
+}
+.introsection .col-sm-8 {
+    padding: 50px 0;
+}
+.introsection .col-sm-8 img {
+    border: none;
+}
+.introsection button, .introsection button:hover, .introsection button:focus, .introsection button:active {
+    color: var(--main-color);
+    background-color: var(--second-color);
+    box-shadow: none;
+    border: none;
+    font-weight: 500;
+    width: 50%;
+    border-radius: 50px;
+}
+/* Services Section Style */
+.servicessection {
+    margin-bottom: 300px;
+}
+.servicessection .header {
+    margin: 0 0 40px 0;
+}
+.servicessection .header h1 {
+    font-size: var(--h1-size);
+    font-weight: 700;
+    margin-top: 30px;
+}
+.servicessection .header p {
+    font-size: var(--p-size);
+}
+.servicessection .card {
+    margin: 0 0 20px 0;
+}
+.servicessection .card-img-top {
+    border-radius: 0;
+}
+.servicessection .card-body {
+    color: var(--main-color);
+}
+.servicessection .card-body p {
+    font-size: var(--p-size);
+}
+/* Products Section Style */
+.productssection #col1 {
+    background-image: url(./Assets/index/productsBG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+.productssection #col2 {
+    color: var(--main-color);
+    background-color: white;
+    padding: 200px 70px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+.productssection #col2::after {
+    position: absolute;
+    background-image: url(./Assets/index/steps2.png);
+    background-repeat: no-repeat;
+    width: 14%; 
+    height: 100%;
+    content: "";
+    right: 0;
+    top: 85px;
+}
+.productssection #col2 #steps {
+    position: absolute;
+    transform: translate(315px, -320px);
+}
+.productssection .col-sm-1 img {
+    margin-top: 90px;
+}
+.productssection h1 {
+    font-size: var(--h1-size);
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+.productssection p {
+    size: var(--p-size);
+    padding-bottom: 20px;
+}
+.productssection .btn {
+    color: white;
+    font-size: var(--p-size);
+    letter-spacing: 3px;
+    font-weight: 500;
+    background-color: var(--main-color);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px 40px 5px 40px;
+}
+.productssection #col2 #dog {
+    position: absolute;
+    transform: translate(150px, -474px);
+}
+/* Client Section Style */
+.clientsection {
+    color: white;
+}
+.clientsection #bgtop {
+    height: 180px;
+    background-image: url(./Assets/backgrounds/Shape2.png);
+    background-size: contain;
+    background-repeat: round;
+}
+.clientsection #bgbottom {
+    height: 180px;
+    background-image: url(./Assets/backgrounds/Shape\ 102.png);
+    background-size: contain;
+    background-repeat: round;
+    position: relative;
+}
+.clientsection .col-sm-6 h1 {
+    font-size: var(--h1-size);
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.clientsection .col-sm-6 div {
+    box-shadow: rgba(10, 10, 19, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    height: auto;
+}
+.clientsection .col-sm-6 div ul li {
+    font-size: var(--p-size);
+    background-color: transparent;
+    border: none;
+}
+.clientsection .col-sm-6 #dog2 {
+    position: absolute;
+    height: 600px;
+    transform: translate(0, -150px);
+}
+.clientsection #steps2 {
+    position: absolute;
+    transform: translate(975px, -90px);
+    z-index: 4;
+}
+/* Contact Us Section Style */
+.contactsection {
+    padding: 100px 0;
+}
+.contactsection h1 {
+    padding-bottom: 40px;
+    color: white;
+    font-size: var(--h1-size);
+    font-weight: 700;
+}
+.contactsection p {
+    padding-bottom: 40px;
+    font-size: var(--p-size);
+    color: black;
+}
+.contactsection ul li {
+    color: var(--main-color);
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    font-size: 24px;
+}
+
+/* ABOUT US PAGE */
+/* First Section Syle */
+.aboutusbody .firstsection {
+    position: relative;
+    color: var(--main-color);
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(./Assets/AboutUs/bg.png);
+    background-size: cover;
+    background-repeat: round;
+    padding: 60px;
+}
+.aboutusbody .firstsection h1 {
+    font-size: var(--h1-size);
+    font-weight: 700;
+}
+.aboutusbody .firstsection p {
+    color: var(--main-color);
+    font-size: var(--p-size);
+    font-weight: 500;
+    font-style: italic;
+    text-transform: uppercase;
+}
+.aboutusbody .firstsection .btn {
+    color: var(--main-color);
+    background-color: var(--second-color);
+    box-shadow: none;
+    border: none;
+    font-weight: 500;
+    width: 50%;
+    border-radius: 50px;
+}
+/* Second Section */
+.aboutusbody .secondsection h1 {
+    padding: 40px 0;
+    font-size: var(--h1-size);
+    font-weight: 700;
+}
+.aboutusbody .secondsection p {
+    font-size: var(--p-size);
+}
+/* Third Section */
+.aboutusbody .thirdsection #dogcat {
+    position: absolute;
+    height: 400px;
+    padding: 0;
+    transform: translate(700px, -282px);
+}
+.aboutusbody .thirdsection {
+    position: relative;
+    color: var(--main-color);
+    width: 100%;
+    background-image: url(./Assets/backgrounds/bg1.png);
+    background-size: cover;
+    background-repeat: round;
+    margin-top: 200px;
+}
+.aboutusbody .thirdsection .txt {
+    padding: 75px 0 0 0;
+}
+.aboutusbody .thirdsection .img {
+    padding: 40px 90px;
+}
+.aboutusbody .thirdsection h1 {
+    font-size: var(--h1-size);
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+.aboutusbody .thirdsection p {
+    font-size: var(--p-size);
+    padding-bottom: 30px;
+    margin-bottom: 0;
+} 
+.aboutusbody .thirdsection .btn {
+    color: white;
+    font-size: var(--p-size);
+    letter-spacing: 3px;
+    font-weight: 500;
+    background-color: var(--main-color);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px 40px 5px 40px;
+}
+/* Fourth Section */
+.aboutusbody .fourthsection {
+    position: relative;
+    width: 100%;
+}
+.aboutusbody .fourthsection .txt {
+    padding: 75px 0 0 0;
+}
+.aboutusbody .fourthsection .img {
+    padding: 30px 130px;
+}
+.aboutusbody .fourthsection h1 {
+    font-size: var(--h1-size);
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+.aboutusbody .fourthsection p {
+    font-size: var(--p-size);
+    padding-bottom: 30px;
+    margin-bottom: 0;
+}
+.aboutusbody .fourthsection .btn {
+    color: var(--main-color);
+    font-size: var(--p-size);
+    letter-spacing: 3px;
+    font-weight: 500;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px 40px 5px 40px;
+}
+/* Fifth Section */
+.aboutusbody .fifthsection {
+    position: relative;
+    color: var(--main-color);
+    width: 100%;
+    background-image: url(./Assets/backgrounds/bg2.png);
+    background-size: cover;
+    background-repeat: round;
+}
+.aboutusbody .fifthsection .txt {
+    padding: 60px 0 0 0;
+}
+.aboutusbody .fifthsection .img {
+    padding: 40px 120px;
+}
+.aboutusbody .fifthsection h1 {
+    font-size: var(--h1-size);
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+.aboutusbody .fifthsection p {
+    font-size: var(--p-size);
+    padding-bottom: 30px;
+    margin-bottom: 0;
+} 
+.aboutusbody .fifthsection .btn {
+    color: white;
+    font-size: var(--p-size);
+    letter-spacing: 3px;
+    font-weight: 500;
+    background-color: var(--main-color);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px 40px 5px 40px;
+}
+/* sixth Section */
+.aboutusbody .sixthsection {
+    position: relative;
+    width: 100%;
+}
+.aboutusbody .sixthsection .txt {
+    padding: 65px 0 0 0;
+}
+.aboutusbody .sixthsection .img {
+    padding: 0 60px;
+}
+.aboutusbody .sixthsection h1 {
+    font-size: var(--h1-size);
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+.aboutusbody .sixthsection p {
+    font-size: var(--p-size);
+    padding-bottom: 30px;
+    margin-bottom: 0;
+}
+.aboutusbody .sixthsection .btn {
+    color: var(--main-color);
+    font-size: var(--p-size);
+    letter-spacing: 3px;
+    font-weight: 500;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px 40px 5px 40px;
+}
+/* Footer */
+.aboutusbody .footersection {
+    color: var(--main-color);
+    background-image: url(./Assets/backgrounds/bg1-flipped.png);
+    background-size: cover;
+    background-repeat: round;
+    padding: 50px 120px 0 120px;
+}
+.aboutusbody .footerimagediv {
+    background-color: white;
+    min-height: 46vh;
+}
+
+/* SERVICES PAGE */
+/* First Section Syle */
+.servicesbody .firstsection {
+    position: relative;
+    background-image: url(./Assets/backgrounds/bg1.png);
+    background-size: cover;
+    background-repeat: round;
+    width: 100%;
+    color: var(--main-color);
+}
+.servicesbody .firstsection .btn {
+    color: white;
+    font-size: var(--p-size);
+    letter-spacing: 3px;
+    font-weight: 500;
+    background-color: var(--main-color);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px 40px 5px 40px;
+}
+/* Second Section Style */
+.servicesbody .secondsection {
+    position: relative;
+    width: 100%;
+    color: white;
+}
+.servicesbody .secondsection .img {
+    margin: 0 0;
+}
+.servicesbody .secondsection .btn {
+    color: var(--main-color);
+    font-size: var(--p-size);
+    letter-spacing: 3px;
+    font-weight: 500;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px 40px 5px 40px;
+}
+/* Third Section Style */
+.servicesbody .thirdsection {
+    position: relative;
+    background-image: url(./Assets/backgrounds/bg2.png);
+    background-size: contain;
+    background-repeat: round;
+    width: 100%;
+    color: var(--main-color);
+}
+.servicesbody .thirdsection .btn {
+    color: white;
+    font-size: var(--p-size);
+    letter-spacing: 3px;
+    font-weight: 500;
+    background-color: var(--main-color);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px 40px 5px 40px;
+}
+/* All Sections Common Style */
+.servicesbody .col-sm-6 {
+    margin: 80px 0;
+}
+.servicesbody .col-sm-6 h1 {
+    font-size: var(--h1-size);
+    font-weight: 700;
+}
+.servicesbody .col-sm-6 p {
+    font-size: var(--p-size);
+    margin: 30px 0 30px 0;
+}
+
+/* PRODUCTS PAGE */
+/* First Section Style */
+.productsbody .firstsection {
+    position: relative;
+    background-image: url(./Assets/backgrounds/bg1.png);
+    background-size: cover;
+    background-repeat: round;
+    width: 100%;
+    color: var(--main-color);
+}
+/* Second Section Style */
+.productsbody .secondsection {
+    position: relative;
+    width: 100%;
+    color: white;
+}
+/* Third Section Style */
+.productsbody .thirdsection {
+    position: relative;
+    background-image: url(./Assets/backgrounds/bg2.png);
+    background-size: cover;
+    background-repeat: round;
+    width: 100%;
+    color: var(--main-color);
+}
+/* All Sections Common Style */
+.productsbody .col-sm-6 {
+    margin: 150px 0;
+}
+.productsbody .col-sm-6 h1 {
+    font-size: var(--h1-size);
+    font-weight: 700;
+}
+.productsbody .col-sm-6 p {
+    font-size: var(--p-size);
+    margin-top: 30px;
+}
+.productsbody .col-sm-1 i {
+    font-size: 100px;
+    margin: 200px 0;
+}
+.productsbody .col-sm-5 img:not(.logo_img) {
+    margin: 65px 0;
+}
+
+/* BLOG PAGE */
+/* First Section */
+.blogbody .firstsection {
+    background-color: white !important;
+    width: 100%;
+    min-height: 300px;
+}
+.blogbody .firstsection::before {
+    position: absolute;
+    background-image: url(./Assets/Blog/bg1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 439px;
+    width: 100%; 
+    height: 100%;
+    content: "";
+}
+/* Second Section */
+.blogbody .secondsection {
+    padding-top: 140px;
+}
+.blogbody .secondsection h1 {
+    font-size: 42px;
+    font-weight: 700;
+    padding: 10px 0;
+}
+.blogbody .secondsection p {
+    font-size: var(--p-size);
+}
+.blogbody .secondsection i {
+    font-size: 80px;
+}
+/* Third Section */
+.blogbody .thirdsection {
+    position: relative;
+    background-image: url(./Assets/backgrounds/bg2.png);
+    background-size: contain;
+    background-repeat: round;
+    width: 100%;
+    color: var(--main-color);
+}
+.blogbody .thirdsection .col-sm-6 {
+    padding: 70px 0;
+}
+.blogbody .thirdsection .image::before {
+    position: absolute;
+    background-image: url(./Assets/Blog/Shape.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 20%;
+    content: "";
+    right: 0px;
+    top: 620px;
+}
+
+/* CONTACT US PAGE */
+/* First Section */
+.contactbody .firstsection {
+    background-color: white !important;
+    min-height: 120vh;
+}
+.contactbody .firstsection iframe {
+    position: absolute;
+    width: 100%;
+    transform: translate(0, 382px);
+}
+.contactbody .firstsection::before {
+    position: absolute;
+    content: url(./Assets/ContactUs/bgg.png);
+    left: 150px;
+    z-index: 1;
+}
+.contactbody .secondsection {
+    min-height: 100vh;
+    position: relative;    
+    background-image: url(./Assets/backgrounds/bg2.png);
+    background-size: cover;
+    background-repeat: round;
+    color: var(--main-color);
+}
+.contactbody .secondsection .row {
+    padding-top: 80px;
+}
+.contactbody .secondsection h1 {
+    font-size: var(--h1-size);
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.contactbody .secondsection p {
+    font-size: var(--p-size);
+    padding-bottom: 20px;
+}
+.contactbody .secondsection form .col-sm-6 .cust_inputbox
+{
+    position: relative;
+    margin-bottom: 40px;
+}
+.contactbody .secondsection form .col-sm-6 .cust_inputbox:last-child
+{
+    margin-bottom: 0px;
+}
+.contactbody .secondsection form .col-sm-6 .cust_inputbox input,
+.contactbody .secondsection form .col-sm-6 .cust_inputbox textarea
+{
+    position: relative;
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    color: var(--main-color);
+    padding-bottom: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    border-bottom: 2px solid var(--main-color);
+    resize: none;
+}
+.contactbody .secondsection form .col-sm-6 .cust_inputbox textarea
+{
+    height: 100px;
+}
+.contactbody .secondsection form .col-sm-6 .cust_inputbox span
+{
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+    font-weight: 300;
+    display: inline-block;
+    pointer-events: none;
+    letter-spacing: 1px;
+    color: var(--second-color);
+    transition: all 0.2s;
+}
+.contactbody .secondsection form .col-sm-6 .cust_inputbox input:focus ~ span,
+.contactbody .secondsection form .col-sm-6 .cust_inputbox textarea:focus ~ span,
+.contactbody .secondsection form .col-sm-6 .cust_inputbox input:valid ~ span,
+.contactbody .secondsection form .col-sm-6 .cust_inputbox textarea:valid ~ span
+{
+    transform: translateY(-24px);
+    color: var(--main-color);
+    font-size: 15px;
+}
+.contactbody .secondsection form .col-sm-6 .cust_inputbox input:focus,
+.contactbody .secondsection form .col-sm-6 .cust_inputbox textarea:focus,
+.contactbody .secondsection form .col-sm-6 .cust_inputbox input:valid,
+.contactbody .secondsection form .col-sm-6 .cust_inputbox textarea:valid
+{
+    border-bottom-color: var(--main-color);
+}
+.contactbody .secondsection form #col2 .cust_inputbox:first-child {
+    margin-top: 80px;
+}
+.contactbody .secondsection form #col2 .cust_inputbox {
+    margin-bottom: 72px;
+}
+.contactbody .secondsection button {
+    font-size: var(--p-size);
+    color: var(--main-color);
+    background-color: var(--second-color);
+    box-shadow: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 50px;
+    margin-left: 50px;
+}
+/* .contactbody footer::after {
+    position: absolute;
+    background-image: url(./Assets/ContactUs/dog.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 15%;
+    height: 40%;
+    right: 12%;
+    top: 223%;
+    content: '';
+} */
